@@ -1,0 +1,6 @@
+{:linters {:unused-referred-var
+           ; incorrect config
+           {:exclude [clojure.core.async]}
+
+           ; correct config
+           #_{:exclude {clojure.core.async [go]}}}}
